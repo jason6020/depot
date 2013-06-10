@@ -13,6 +13,7 @@
           <dl>
             <dt><%= product.title %></dt>
             <dd><%= truncate(strip_tags(product.description), :length => 80)%></dd>
+            <dd><%= "$ " + product.price.to_s %></dd>
           </dl>
         </td>
 
